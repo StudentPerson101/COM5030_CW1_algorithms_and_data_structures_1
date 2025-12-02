@@ -2,7 +2,7 @@
 
 Project on algorithms and data structures.
 
-The version fit for use is the final version which is the .cpp file titled 'thingy1 v6 (cpp) (duplicate prompt fixed) (run this).cpp'
+The version fit for use is the final version which is the .cpp file titled 'thingy1 v6 (duplicate prompt fixed) (run this).cpp'
 
 The program uses only standard C++ libraries so as long as the host contains a C++ compiler that the program can access, the code should run without issue.
 
