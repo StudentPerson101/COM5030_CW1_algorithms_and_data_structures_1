@@ -1,0 +1,231 @@
+
+
+CM0[0] - "3D Asset Design", 
+CM0[1] - "AI for Games", 
+CM0[2] - "Advanced Data Technologies", 
+CM0[3] - "Advanced Mobile", 
+CM0[4] - "Advanced Programming", 
+CM0[5] - "Advanced Team Project", 
+CM0[6] - "Agile Project Management", 
+CM0[7] - "Algorithms and Data Structures", 
+CM0[8] - "Autonomous Robotic Systems", 
+CM0[9] - "Cloud Computing", 
+CM0[10] - "Computer Architecture", 
+CM0[11] - "Computer Science", 
+CM0[12] - "Computing Computational Fundamentals", 
+CM0[13] - "Critical Systems", 
+CM0[14] - "Cyber Security Project", 
+CM0[15] - "Cyber Threat and Risk Management", 
+CM0[16] - "Data Essentials", 
+CM0[17] - "Data Science", 
+CM0[18] - "Design Patterns", 
+CM0[19] - "Digital Forensics Investigation and Penetration Testing", 
+CM0[20] - "Digital Innovation", 
+CM0[21] - "Extended Independent work", 
+CM0[22] - "Game Design", 
+CM0[23] - "Game Engine Development", 
+CM0[24] - "Graphical Programming", 
+CM0[25] - "Information Security", 
+CM0[26] - "Introduction to Natural Language Processing", 
+CM0[27] - "Knowledge-Based Systems in Artificial Intelligence", 
+CM0[28] - "Learning Machines and Intelligent Agents", 
+CM0[29] - "Legal Aspects of IT", 
+CM0[30] - "Level Design", 
+CM0[31] - "Machine Learning", 
+CM0[32] - "Malware and Cyber Security Management", 
+CM0[33] - "Maths for Games", 
+CM0[34] - "Mobile Systems", 
+CM0[35] - "Network Security", 
+CM0[36] - "Network Systems", 
+CM0[37] - "Networks", 
+CM0[38] - "Object Oriented Design and Development", 
+CM0[39] - "Object Oriented Analysis and Design", 
+CM0[40] - "Object Oriented Programming", 
+CM0[41] - "Physics Engine Programmer", 
+CM0[42] - "Planning, Search and Artificial Intelligence", 
+CM0[43] - "Programming Concepts", 
+CM0[44] - "Project", 
+CM0[45] - "Real-time Systems", 
+CM0[46] - "Research Methods", 
+CM0[47] - "Secure Business Management", 
+CM0[48] - "Security Auditing and Response", 
+CM0[49] - "Software Engineering", 
+CM0[50] - "Software Testing and QA", 
+CM0[51] - "Virtual Environments", 
+CM0[52] - "Web", 
+CM0[53] - "Web Application Development"
+
+
+ 
+#include <vector>
+#include <string>
+
+struct CM0 {
+    std::vector<std::string> modules_0{
+        "3D Asset Design",
+        "AI for Games",
+        "Advanced Data Technologies",
+        "Advanced Mobile",
+        "Advanced Programming",
+        "Advanced Team Project",
+        "Agile Project Management",
+        "Algorithms and Data Structures",
+        "Autonomous Robotic Systems",
+        "Cloud Computing",
+        "Computer Architecture",
+        "Computer Science",
+        "Computing Computational Fundamentals",
+        "Critical Systems",
+        "Cyber Security Project",
+        "Cyber Threat and Risk Management",
+        "Data Essentials",
+        "Data Science",
+        "Design Patterns",
+        "Digital Forensics Investigation and Penetration Testing",
+        "Digital Innovation",
+        "Extended Independent work",
+        "Game Design",
+        "Game Engine Development",
+        "Graphical Programming",
+        "Information Security",
+        "Introduction to Natural Language Processing",
+        "Knowledge-Based Systems in Artificial Intelligence",
+        "Learning Machines & Intelligent Agents",
+        "Learning Machines and Intelligent Agents",
+        "Legal Aspects of IT",
+        "Level Design",
+        "Machine Learning",
+        "Malware and Cyber Security Management",
+        "Maths for Games",
+        "Mobile Systems",
+        "Network Security",
+        "Network Systems",
+        "Networks",
+        "Object Orientated Analysis and Design",
+        "Object Orientated Design and Development",
+        "Object Orientated Programme",
+        "Object Oriented Analysis and Design",
+        "Object Oriented Programming",
+        "Physics Engine Programmer",
+        "Planning, Search and Artificial Intelligence",
+        "Programming Concepts",
+        "Project",
+        "Real-time Systems",
+        "Research Methods",
+        "Secure Business Management",
+        "Security Auditing and Response",
+        "Software Engineering",
+        "Software Testing and QA",
+        "Virtual Environments",
+        "Web",
+        "Web Application Development"
+    };
+};
+
+
+
+CYBS = "Cyber Security";
+GG46 = "Computer Games Development";
+I300 = "Software Engineering";
+ARIN = "Computer Science with Artificial Intelligence";
+CS01 = "Computer Science";
+G400 = "Computing";
+
+CYBS_y1{ CM0[43], CM0[10], CM0[37], CM0[15], CM0[12] };
+CYBS_y2{ CM0[25], CM0[32], CM0[46], CM0[19], CM0[16], CM0[36] };
+CYBS_y3{ CM0[47], CM0[14], CM0[48], CM0[35], CM0[9], CM0[50], CM0[20] };
+
+GG46_y1{ CM0[43], CM0[10], CM0[30], CM0[33], CM0[22] };
+GG46_y2{ CM0[24], CM0[39], CM0[40], CM0[44], CM0[6], CM0[0], CM0[51] };
+GG46_y3{ CM0[4], CM0[1], CM0[44], CM0[5], CM0[23], CM0[18], CM0[13], CM0[50], CM0[41] };
+
+I300_y1{ CM0[43], CM0[10], CM0[37], CM0[52], CM0[12] };
+I300_y2{ CM0[49], CM0[39], CM0[46], CM0[40], CM0[6], CM0[7], CM0[16], CM0[45], CM0[53], CM0[11] };
+I300_y3{ CM0[4], CM0[21], CM0[50], CM0[18], CM0[20], CM0[9], CM0[3], CM0[13], CM0[17], CM0[35] };
+
+ARIN_y1{ CM0[43], CM0[10], CM0[37], CM0[52], CM0[12] };
+ARIN_y2{ CM0[31], CM0[42], CM0[46], CM0[26], CM0[11], CM0[7] };
+ARIN_y3{ CM0[8], CM0[21], CM0[29], CM0[17], CM0[27], CM0[28] };
+
+CS01_y1{ CM0[43], CM0[10], CM0[37], CM0[52], CM0[12] };
+CS01_y2{ CM0[16], CM0[40], CM0[46], CM0[26], CM0[45], CM0[7] };
+CS01_y3{ CM0[4], CM0[21], CM0[18], CM0[13], CM0[9], CM0[17], CM0[27] };
+
+G400_y1{ CM0[43], CM0[10], CM0[37], CM0[52], CM0[12] };
+G400_y2{ CM0[7], CM0[38], CM0[46], CM0[34], CM0[36], CM0[16] };
+G400_y3{ CM0[20], CM0[21], CM0[50], CM0[18], CM0[2], CM0[9], CM0[3], CM0[27], CM0[28] };
+
+
+
+
+Original
+#include <vector>
+#include <string>
+
+struct Modules {
+    std::vector<std::string> modules_0{
+        "3D Asset Design", 
+        "AI for Games", 
+        "Advanced Data Technologies", 
+        "Advanced Mobile", 
+        "Advanced Programming", 
+        "Advanced Team Project", 
+        "Agile Project Management", 
+        "Algorithms and Data Structures", 
+        "Autonomous Robotic Systems", 
+        "Cloud Computing", 
+        "Computer Architecture", 
+        "Computer Science", 
+        "Computing Computational Fundamentals", 
+        "Critical Systems", 
+        "Cyber Security Project", 
+        "Cyber Threat and Risk Management", 
+        "Data Essentials", 
+        "Data Science", 
+        "Design Patterns", 
+        "Digital Forensics Investigation and Penetration Testing", 
+        "Digital Innovation", 
+        "Extended Independent work", 
+        "Game Design", 
+        "Game Engine Development", 
+        "Graphical Programming", 
+        "Information Security", 
+        "Introduction to Natural Language Processing", 
+        "Knowledge-Based Systems in Artificial Intelligence", 
+        "Learning Machines and Intelligent Agents", 
+        "Legal Aspects of IT", 
+        "Level Design", 
+        "Machine Learning", 
+        "Malware and Cyber Security Management", 
+        "Maths for Games", 
+        "Mobile Systems", 
+        "Network Security", 
+        "Network Systems", 
+        "Networks", 
+        "Object Oriented Design and Development", 
+        "Object Oriented Analysis and Design", 
+        "Object Oriented Programming", 
+        "Physics Engine Programmer", 
+        "Planning, Search and Artificial Intelligence", 
+        "Programming Concepts", 
+        "Project", 
+        "Real-time Systems", 
+        "Research Methods", 
+        "Secure Business Management", 
+        "Security Auditing and Response", 
+        "Software Engineering", 
+        "Software Testing and QA", 
+        "Virtual Environments", 
+        "Web", 
+        "Web Application Development"
+    };
+};
+
+
+
+
+
+
+
+
+
