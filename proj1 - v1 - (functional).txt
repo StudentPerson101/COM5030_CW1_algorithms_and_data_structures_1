@@ -1,0 +1,242 @@
+#include <iostream>
+#include <string>
+#include <chrono>
+#include <thread>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+
+std::chrono::milliseconds tmr1(500);
+
+/*
+XX CYBS - Cyber Security
+XX GG46 - Computer Games Development
+XX I300 - Software Engineering
+XX ARIN - Computer Science with Artificial Intelligence
+XX CS01 - Computer Science
+XX G400 - Computing
+*/
+
+struct CompCourses1
+{
+    std::string CYBS = "Cyber Security";
+    std::string GG46 = "Computer Games Development";
+    std::string I300 = "Software Engineering";
+    std::string ARIN = "Computer Science with Artificial Intelligence";
+    std::string CS01 = "Computer Science";
+    std::string G400 = "Computing";
+};
+
+struct CompModules1
+{
+    std::string moduleNum;
+    std::vector<std::string> CYBS_modulesY1{ "Programming Concepts", "Computer Architecture","Networks","Cyber Threat and Risk Management","Computing Computational Fundamentals" };
+    std::vector<std::string> CYBS_modulesY2{ "Information Security","Malware and Cyber Security Management","Research Methods","Digital Forensics Investigation and Penetration Testing","Data Essentials","Network Systems" };
+    std::vector<std::string> CYBS_modulesY3{ "Secure Business Management","Cyber Security Project","Security Auditing and Response","Network Security","Cloud Computing","Software Testing & QA","Digital Innovation" };
+    std::vector<std::string> GG46_modulesY1{ "Programming Concepts", "Computer Architecture","Level Design","Maths for Games","Game Design" };
+    std::vector<std::string> GG46_modulesY2{ "Graphical Programming","Object Oriented Analysis and Design","Object Oriented Programming","Project","Agile Project Management","3D Asset Design", "Virtual Environments" };
+    std::vector<std::string> GG46_modulesY3{ "Advanced Programming","AI for Games","Project","Advanced Team Project","Game Engine Development","Design Patterns","Critical Systems","Software Testing and QA","Physics Engine Programmer" };
+    std::vector<std::string> I300_modulesY1{ "Programming Concepts", "Computer Architecture","Networks","Web","Computing Computational Fundamentals" };
+    std::vector<std::string> I300_modulesY2{ "Software Engineering","Object Orientated Analysis and Design","Research Methods","Object Orientated Programme","Agile Project Management","Algorithms and Data Structures","Data Essentials","Real-time Systems","Web Application Development","Computer Science" };
+    std::vector<std::string> I300_modulesY3{ "Advanced Programming","Extended Independent work","Software Testing & QA","Design Patterns","Digital Innovation","Cloud Computing","Advanced Mobile","Critical Systems","Data Science","Network Security" };
+    std::vector<std::string> ARIN_modulesY1{ "Programming Concepts", "Computer Architecture","Networks","Web","Computing Computational Fundamentals" };
+    std::vector<std::string> ARIN_modulesY2{ "Machine Learning","Planning, Search and Artificial Intelligence","Research Methods","Introduction to Natural Language Processing","Computer Science","Algorithms and Data Structures" };
+    std::vector<std::string> ARIN_modulesY3{ "Autonomous Robotic Systems","Extended Independent work","Legal Aspects of IT","Data Science","Knowledge-Based Systems in Artificial Intelligence","Learning Machines and Intelligent Agents" };
+    std::vector<std::string> CS01_modulesY1{ "Programming Concepts", "Computer Architecture","Networks","Web","Computing Computational Fundamentals" };
+    std::vector<std::string> CS01_modulesY2{ "Data Essentials","Object Oriented Programming","Research Methods","Introduction to Natural Language Processing","Real-time Systems", "Algorithms and Data Structures" };
+    std::vector<std::string> CS01_modulesY3{ "Advanced Programming","Extended Independent work","Design Patterns","Critical Systems","Cloud Computing","Data Science","Knowledge-Based Systems in Artificial Intelligence" };
+    std::vector<std::string> G400_modulesY1{ "Programming Concepts", "Computer Architecture","Networks","Web","Computing Computational Fundamentals" };
+    std::vector<std::string> G400_modulesY2{ "Algorithms and Data Structures","Object Orientated Design and Development","Research Methods","Mobile Systems","Network Systems","Data Essentials" };
+    std::vector<std::string> G400_modulesY3{ "Digital Innovation","Extended Independent work","Software Testing & QA","Design Patterns","Advanced Data Technologies","Cloud Computing","Advanced Mobile","Knowledge-Based Systems in Artificial Intelligence","Learning Machines & Intelligent Agents" };
+    //std::string subject;
+    //std::string CYBS, I300, ARIN, CS01, G400, GG46;
+
+
+};
+void shrinkerCYBS()
+{
+    CompCourses1 CourseSelect1;
+    CompModules1 ModuleSelect1;
+    std::cout << "\n\n    Course: " << CourseSelect1.CYBS << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.CYBS_modulesY1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.CYBS_modulesY1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.CYBS_modulesY2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.CYBS_modulesY2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.CYBS_modulesY3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.CYBS_modulesY3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerGG46()
+{
+    CompCourses1 CourseSelect1;
+    CompModules1 ModuleSelect1;
+    std::cout << "\n\n    Course: " << CourseSelect1.GG46 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.GG46_modulesY1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.GG46_modulesY1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.GG46_modulesY2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.GG46_modulesY2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.GG46_modulesY3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.GG46_modulesY3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerI300()
+{
+    CompCourses1 CourseSelect1;
+    CompModules1 ModuleSelect1;
+    std::cout << "\n\n    Course: " << CourseSelect1.I300 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.I300_modulesY1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.I300_modulesY1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.I300_modulesY2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.I300_modulesY2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.I300_modulesY3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.I300_modulesY3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerARIN()
+{
+    CompCourses1 CourseSelect1;
+    CompModules1 ModuleSelect1;
+    std::cout << "\n\n    Course: " << CourseSelect1.ARIN << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.ARIN_modulesY1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.ARIN_modulesY1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.ARIN_modulesY2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.ARIN_modulesY2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.ARIN_modulesY3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.ARIN_modulesY3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerCS01()
+{
+    CompCourses1 CourseSelect1;
+    CompModules1 ModuleSelect1;
+    std::cout << "\n\n    Course: " << CourseSelect1.CS01 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.CS01_modulesY1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.CS01_modulesY1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.CS01_modulesY2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.CS01_modulesY2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.CS01_modulesY3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.CS01_modulesY3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerG400()
+{
+    CompCourses1 CourseSelect1;
+    CompModules1 ModuleSelect1;
+    std::cout << "\n\n    Course: " << CourseSelect1.G400 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.G400_modulesY1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.G400_modulesY1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.G400_modulesY2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.G400_modulesY2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect1.G400_modulesY3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect1.G400_modulesY3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+int CEOfunc()
+{
+    //std::string CompModule1 = BScHonsComp1_1.CYBS_modulesY3[2];
+   while (true)
+   {
+       
+        CompCourses1 CourseSelect1;
+        CompModules1 ModuleSelect1;
+        std::cout << "\n\n    What course are you interested in taking?\n\n    Enter the corresponding course code:\n\n";
+        std::cout << "    CYBS - Cyber Security\n"
+                  << "    GG46 - Computer Games Development\n"
+                  << "    I300 - Software Engineering\n"
+                  << "    ARIN - Computer Science with Artificial Intelligence\n"
+                  << "    CS01 - Computer Science\n"
+                  << "    G400 - Computing\n\n    "
+                  << "\n\n    Enter 'exit' to exit.";
+        std::string Ans1;
+        std::getline(std::cin, Ans1);
+        // Convert the string to lowercase
+        std::transform(Ans1.begin(), Ans1.end(), Ans1.begin(),
+            [](unsigned char c) { return std::tolower(c); });
+        //int ctr1 = 0;
+        if (Ans1 == "cybs")
+        {shrinkerCYBS();}
+        else if (Ans1 == "gg46")
+        {shrinkerGG46();}
+        else if (Ans1 == "i300")
+        {shrinkerI300();}
+        else if (Ans1 == "arin")
+        {shrinkerARIN();}
+        else if (Ans1 == "cs01")
+        {shrinkerCS01();}
+        else if (Ans1 == "g400")
+        {shrinkerG400();}
+        else if (Ans1 == "exit")
+        {return 0;}
+   }
+}
+
+int main()
+{
+    CEOfunc();
+}

@@ -1,0 +1,373 @@
+#include <iostream>
+#include <string>
+#include <chrono>
+#include <thread>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+
+std::chrono::milliseconds tmr1(200);
+std::chrono::milliseconds tmr2(2300);
+std::chrono::milliseconds tmr3(1500);
+std::chrono::milliseconds tmr4(200);
+
+/*
+XX CYBS - Cyber Security
+XX GG46 - Computer Games Development
+XX I300 - Software Engineering
+XX ARIN - Computer Science with Artificial Intelligence
+XX CS01 - Computer Science
+XX G400 - Computing
+*/
+
+struct CompModules0 {
+    std::vector<std::string> cm0{
+        "3D Asset Design", "AI for Games", "Advanced Data Technologies", "Advanced Mobile", "Advanced Programming", "Advanced Team Project", 
+        "Agile Project Management", "Algorithms and Data Structures", "Autonomous Robotic Systems", "Cloud Computing", "Computer Architecture", 
+        "Computer Science", "Computing Computational Fundamentals", "Critical Systems", "Cyber Security Project", "Cyber Threat and Risk Management", 
+        "Data Essentials", "Data Science", "Design Patterns", "Digital Forensics Investigation and Penetration Testing", "Digital Innovation", 
+        "Extended Independent work", "Game Design", "Game Engine Development", "Graphical Programming", "Information Security", 
+        "Introduction to Natural Language Processing", "Knowledge-Based Systems in Artificial Intelligence", "Learning Machines and Intelligent Agents", 
+        "Legal Aspects of IT", "Level Design", "Machine Learning", "Malware and Cyber Security Management", "Maths for Games", 
+        "Mobile Systems", "Network Security", "Network Systems", "Networks", "Object Oriented Design and Development", "Object Oriented Analysis and Design", 
+        "Object Oriented Programming", "Physics Engine Programmer", "Planning, Search and Artificial Intelligence", "Programming Concepts", 
+        "Project", "Real-time Systems", "Research Methods", "Secure Business Management", "Security Auditing and Response", "Software Engineering", 
+        "Software Testing and QA", "Virtual Environments", "Web", "Web Application Development"
+    };
+    std::vector<std::string> CYBS_y1{ cm0[43], cm0[10], cm0[37], cm0[15], cm0[12] };
+    std::vector<std::string> CYBS_y2{ cm0[25], cm0[32], cm0[46], cm0[19], cm0[16], cm0[36] };
+    std::vector<std::string> CYBS_y3{ cm0[47], cm0[14], cm0[48], cm0[35], cm0[9], cm0[50], cm0[20] };
+    std::vector<std::string> GG46_y1{ cm0[43], cm0[10], cm0[30], cm0[33], cm0[22] };
+    std::vector<std::string> GG46_y2{ cm0[24], cm0[39], cm0[40], cm0[44], cm0[6], cm0[0], cm0[51] };
+    std::vector<std::string> GG46_y3{ cm0[4], cm0[1], cm0[44], cm0[5], cm0[23], cm0[18], cm0[13], cm0[50], cm0[41] };
+    std::vector<std::string> I300_y1{ cm0[43], cm0[10], cm0[37], cm0[52], cm0[12] };
+    std::vector<std::string> I300_y2{ cm0[49], cm0[39], cm0[46], cm0[40], cm0[6], cm0[7], cm0[16], cm0[45], cm0[53], cm0[11] };
+    std::vector<std::string> I300_y3{ cm0[4], cm0[21], cm0[50], cm0[18], cm0[20], cm0[9], cm0[3], cm0[13], cm0[17], cm0[35] };
+    std::vector<std::string> ARIN_y1{ cm0[43], cm0[10], cm0[37], cm0[52], cm0[12] };
+    std::vector<std::string> ARIN_y2{ cm0[31], cm0[42], cm0[46], cm0[26], cm0[11], cm0[7] };
+    std::vector<std::string> ARIN_y3{ cm0[8], cm0[21], cm0[29], cm0[17], cm0[27], cm0[28] };
+    std::vector<std::string> CS01_y1{ cm0[43], cm0[10], cm0[37], cm0[52], cm0[12] };
+    std::vector<std::string> CS01_y2{ cm0[16], cm0[40], cm0[46], cm0[26], cm0[45], cm0[7] };
+    std::vector<std::string> CS01_y3{ cm0[4], cm0[21], cm0[18], cm0[13], cm0[9], cm0[17], cm0[27] };
+    std::vector<std::string> G400_y1{ cm0[43], cm0[10], cm0[37], cm0[52], cm0[12] };
+    std::vector<std::string> G400_y2{ cm0[7], cm0[38], cm0[46], cm0[34], cm0[36], cm0[16] };
+    std::vector<std::string> G400_y3{ cm0[20], cm0[21], cm0[50], cm0[18], cm0[2], cm0[9], cm0[3], cm0[27], cm0[28] };
+};
+
+struct CompCourses1
+{
+    std::string CYBS = "Cyber Security";
+    std::string GG46 = "Computer Games Development";
+    std::string I300 = "Software Engineering";
+    std::string ARIN = "Computer Science with Artificial Intelligence";
+    std::string CS01 = "Computer Science";
+    std::string G400 = "Computing";
+};
+
+
+void shrinkerCYBS()
+{
+    CompCourses1 CourseSelect1;
+    CompModules0 ModuleSelect0;
+    std::cout << "\n\n    Course: " << CourseSelect1.CYBS << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.CYBS_y1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.CYBS_y1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.CYBS_y2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.CYBS_y2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.CYBS_y3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.CYBS_y3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerGG46()
+{
+    CompCourses1 CourseSelect1;
+    CompModules0 ModuleSelect0;
+    std::cout << "\n\n    Course: " << CourseSelect1.GG46 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.GG46_y1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.GG46_y1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.GG46_y2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.GG46_y2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.GG46_y3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.GG46_y3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerI300()
+{
+    CompCourses1 CourseSelect1;
+    CompModules0 ModuleSelect0;
+    std::cout << "\n\n    Course: " << CourseSelect1.I300 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.I300_y1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.I300_y1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.I300_y2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.I300_y2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.I300_y3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.I300_y3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerARIN()
+{
+    CompCourses1 CourseSelect1;
+    CompModules0 ModuleSelect0;
+    std::cout << "\n\n    Course: " << CourseSelect1.ARIN << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.ARIN_y1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.ARIN_y1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.ARIN_y2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.ARIN_y2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.ARIN_y3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.ARIN_y3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerCS01()
+{
+    CompCourses1 CourseSelect1;
+    CompModules0 ModuleSelect0;
+    std::cout << "\n\n    Course: " << CourseSelect1.CS01 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.CS01_y1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.CS01_y1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.CS01_y2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.CS01_y2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.CS01_y3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.CS01_y3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+void shrinkerG400()
+{
+    CompCourses1 CourseSelect1;
+    CompModules0 ModuleSelect0;
+    std::cout << "\n\n    Course: " << CourseSelect1.G400 << "  ";
+    std::cout << "\n    Modules:\n\n    Year 1:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.G400_y1.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.G400_y1[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 2:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.G400_y2.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.G400_y2[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+    std::cout << "\n\n    Year 3:";
+    for (int ctr1 = 0; ctr1 < ModuleSelect0.G400_y3.size(); ctr1++)
+    {
+        std::cout << "\n    " << ModuleSelect0.G400_y3[ctr1];
+        std::this_thread::sleep_for(tmr1);
+    }
+}
+int courseFunc()
+{
+    //std::string CompModule1 = BScHonsComp1_1.CYBS_modulesY3[2];
+   while (true)
+   {
+       
+        CompCourses1 CourseSelect1;
+        CompModules0 ModuleSelect0;
+        std::cout << "\n\n    What course are you interested in taking?\n\n    Enter the corresponding course code:\n\n";
+        std::cout << "    CYBS - Cyber Security\n"
+                  << "    GG46 - Computer Games Development\n"
+                  << "    I300 - Software Engineering\n"
+                  << "    ARIN - Computer Science with Artificial Intelligence\n"
+                  << "    CS01 - Computer Science\n"
+                  << "    G400 - Computing\n\n    "
+                  << "\n\n    Enter 'out' to log out. \n\n";
+        std::string Ans2;
+        std::getline(std::cin, Ans2);
+        std::transform(Ans2.begin(), Ans2.end(), Ans2.begin(),
+        [](unsigned char c) { return std::tolower(c); });
+        if (Ans2 == "cybs")
+        {shrinkerCYBS();}
+        else if (Ans2 == "gg46")
+        {shrinkerGG46();}
+        else if (Ans2 == "i300")
+        {shrinkerI300();}
+        else if (Ans2 == "arin")
+        {shrinkerARIN();}
+        else if (Ans2 == "cs01")
+        {shrinkerCS01();}
+        else if (Ans2 == "g400")
+        {shrinkerG400();}
+        else if (Ans2 == "out")
+        {return 0;}
+   }
+}
+
+int ModCourseSrch()
+{
+    CompModules0 ModuleSelect0;
+    while (true)
+    {
+    
+        int Ans4;
+        std::cout << "\n\n    Enter module index (0 to " << ModuleSelect0.cm0.size() - 1 << "): ";
+        std::cin >> Ans4;
+
+        if (Ans4 < 0 || static_cast<std::size_t>(Ans4) >= ModuleSelect0.cm0.size()) {
+            std::cout << "Invalid index.\n";
+            return 0;
+        }
+
+        std::string targetModule = ModuleSelect0.cm0[Ans4];
+        std::cout << "\n    Searching for module: " << targetModule << "\n";
+
+        
+        std::vector<std::tuple<std::string, int, std::vector<std::string>*>> all = {
+        {"CYBS", 1, &ModuleSelect0.CYBS_y1},
+        {"CYBS", 2, &ModuleSelect0.CYBS_y2},
+        {"CYBS", 3, &ModuleSelect0.CYBS_y3},
+        {"GG46", 1, &ModuleSelect0.GG46_y1},
+        {"GG46", 2, &ModuleSelect0.GG46_y2},
+        {"GG46", 3, &ModuleSelect0.GG46_y3},
+        {"I300", 1, &ModuleSelect0.I300_y1},
+        {"I300", 2, &ModuleSelect0.I300_y2},
+        {"I300", 3, &ModuleSelect0.I300_y3},
+        {"ARIN", 1, &ModuleSelect0.ARIN_y1},
+        {"ARIN", 2, &ModuleSelect0.ARIN_y2},
+        {"ARIN", 3, &ModuleSelect0.ARIN_y3},
+        {"CS01", 1, &ModuleSelect0.CS01_y1},
+        {"CS01", 2, &ModuleSelect0.CS01_y2},
+        {"CS01", 3, &ModuleSelect0.CS01_y3},
+        {"G400", 1, &ModuleSelect0.G400_y1},
+        {"G400", 2, &ModuleSelect0.G400_y2},
+        {"G400", 3, &ModuleSelect0.G400_y3}
+        };
+
+        bool foundAnywhere = false;
+
+        for (const auto& entry : all) {
+            const std::string& courseName = std::get<0>(entry);
+            int year = std::get<1>(entry);
+            std::vector<std::string>& vec = *std::get<2>(entry);
+
+            auto it = std::find(vec.begin(), vec.end(), targetModule);
+            if (it != vec.end()) {
+                std::cout << "\n    Module \"" << targetModule << "\" found in course "
+                          << courseName << " year " << year << "\n";
+                foundAnywhere = true;
+            }
+        }
+
+        if (!foundAnywhere) {
+            std::cout << "\n    Module \"" << targetModule << "\" not found in any course/year.\n";
+        }
+
+    }
+}
+
+int moduleFunc()
+{
+    CompModules0 cmSelect0;
+    while (true)
+    {
+        std::cout << "\n\n    Print modules?\n\n    Yes?\n    No? (go to search)\n\n    exit?\n\n";
+        int ctr2 = 1;
+        std::string Ans3;
+        std::cin >> Ans3;
+        std::transform(Ans3.begin(), Ans3.end(), Ans3.begin(),
+        [](unsigned char c) { return std::tolower(c); });
+        if (Ans3 == "yes")
+        {
+            for(int ctr1 = 0; ctr2 <= cmSelect0.cm0.size(); ctr1++)
+            {
+                std::cout << ctr1 << " - " << cmSelect0.cm0[ctr1] << "\n";
+                std::this_thread::sleep_for(tmr4);
+                ctr2++;
+            }
+        }
+        else if (Ans3 == "no")
+        {
+            ModCourseSrch();
+        }
+        else if (Ans3 == "exit")
+        {
+            return 0;
+        }
+        
+    }
+}
+
+int CEOfunc()
+{
+    while (true)
+    {
+        std::cout << "\n\n    Select specific course or list all computer science related modules? Type your answer.\n\n"
+                  << "    1) Course \n\n"
+                  << "    2) Modules \n\n\n\n"
+                  << "    exit? \n\n";
+        std::string Ans1;
+        std::getline(std::cin, Ans1);
+        std::transform(Ans1.begin(), Ans1.end(), Ans1.begin(),
+        [](unsigned char c) { return std::tolower(c); });
+        if (Ans1 == "1" || Ans1 == "course")
+        {
+            courseFunc();
+        }
+        else if (Ans1 == "2" || Ans1 == "modules")
+        {
+            moduleFunc();
+        }
+        else if (Ans1 == "exit")
+        {
+            return 0;
+        }
+    }
+}
+
+int main()
+{
+    CEOfunc();
+}

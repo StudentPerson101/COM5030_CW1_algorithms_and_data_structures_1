@@ -1,0 +1,15 @@
+
+v1 - oldest recorded version + it works
+
+v2 - attempt at user authentication feature
+
+v3 - user authentication removed + universal module container added
+
+v4 - partially broken program
+
+v5 - is functional but buggy
+
+v6 - final version + everything works 
+
+
+
