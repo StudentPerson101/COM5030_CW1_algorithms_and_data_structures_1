@@ -3,7 +3,7 @@ v1 - oldest recorded version + it works
 
 v2 - attempt at user authentication feature
 
-v3 - user authentication removed + universal module container added
+v3 - universal module container added + user authentication (security feature beta) removed (redundant)
 
 v4 - partially broken program
 
